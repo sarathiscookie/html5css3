@@ -1,0 +1,20 @@
+*{color: black;}
+/* attribute */
+p[name="first"]{color:green;}
+
+/* regular expression */
+p[name^="second"]{color: aqua;} /* ^= starting with second */
+p[name$="attribute"]{color: blueviolet;} /* $= ending with attribute */
+p[name*="grap"]{color: brown;} /* *= word contains attri */
+
+/* pseudo-class */
+p.pseudoclass:nth-child(even){color: blue;}
+
+/* negation-pseudo-class */
+:not(.notnegation){color: darkmagenta;}
+
+/* selectors */
+p.cssselectors + p{color: gold;}
+
+/* selectors */
+p.cssselector ~ p{color: orange;}

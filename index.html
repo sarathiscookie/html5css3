@@ -3,34 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="main.css" rel="stylesheet">
 </head>
 <body>
-<header>This is the header</header>
+<header class="notnegation">This is the header</header>
 <nav>
     <ul>
-        <li>Home</li>
-        <li>Tutorial</li>
-        <li>Help</li>
+        <li class="notnegation">Home</li>
+        <li class="notnegation">Tutorial</li>
+        <li class="notnegation">Help</li>
     </ul>
 </nav>
 <section>
+    <h1 class="notnegation">Attributes and Regular expressions</h1>
     <article>
         <header>
-            <h1>First Article</h1>
-            <h2>First Article sud heading</h2>
+            <h2 class="notnegation">Attributes</h2>
+            <h3 class="notnegation">p[name="first"]</h3>
         </header>
-        <p>This is the first article details</p>
-        <footer>First article footer</footer>
+        <p name="first notnegation">Hi this is first attribute</p>
+        <p name="first notnegation">Hi this is second attribute</p>
+        <p name="first notnegation">Hi this is third attribute</p>
+        <footer class="notnegation">First article footer</footer>
     </article>
     <article>
         <header>
-            <h1>Second Article</h1>
-            <h2>Second Article sud heading</h2>
+            <h2 class="notnegation">Regular expressions</h2>
+            <h3 class="notnegation">p[name^="first"]</h3>
+            <h3 class="notnegation">p[name$="first"]</h3>
+            <h3 class="notnegation">p[name*="first"]</h3>
         </header>
-        <p>This is the second article details</p>
-        <footer>Second article footer</footer>
+        <p name="second notnegation">Hi this is regular expression example: beginning</p>
+        <p name="rowattribute notnegation">Hi this is regular expression example: end</p>
+        <p name="paragraph notnegation">Hi this is regular expression example: any portion of the name</p>
+        <footer class="notnegation">Second article footer</footer>
+    </article>
+    <article>
+        <header>
+            <h2 class="notnegation">Pseudo Class</h2>
+            <h3 class="notnegation">p.pseudoclass:nth-child(even)</h3>
+            <h3 class="notnegation">p.pseudoclass:nth-child(odd)</h3>
+        </header>
+        <p class="pseudoclass notnegation">Hi this is pseudo class example</p>
+        <p class="pseudoclass notnegation">Hi this is pseudo class example</p>
+        <p class="pseudoclass notnegation">Hi this is pseudo class example</p>
+        <p class="pseudoclass notnegation">Hi this is pseudo class example</p>
+        <p class="pseudoclass notnegation">Hi this is pseudo class example</p>
+        <p class="pseudoclass notnegation">Hi this is pseudo class example</p>
+        <footer class="notnegation">Third article footer</footer>
+    </article>
+    <article>
+        <header>
+            <h2 class="notnegation">Negation Pseudo Class</h2>
+            <h3 class="notnegation">:not(.notnegation)</h3>
+        </header>
+        <p class="negationpseudoclass">Hi this is negation pseudo class example</p>
+        <p class="negationpseudoclass">Hi this is negation pseudo class example</p>
+        <p class="negationpseudoclass">Hi this is negation pseudo class example</p>
+        <p class="negationpseudoclass">Hi this is negation pseudo class example</p>
+        <p class="negationpseudoclass">Hi this is negation pseudo class example</p>
+        <p class="negationpseudoclass">Hi this is negation pseudo class example</p>
+        <footer class="notnegation">Fourth article footer</footer>
+    </article>
+    <article>
+        <header>
+            <h2 class="notnegation">Css Selectors</h2>
+            <h2 class="notnegation">p.cssselectors + p</h2>
+        </header>
+        <div>
+            <p class="cssselectors notnegation">This is css selectors</p>
+            <p class="cssselectors notnegation">This is css selectors</p>
+            <p class="cssselectors notnegation">This is css selectors</p>
+            <span class="notnegation">Css selectors Span</span>
+            <p class="cssselectors notnegation">This is css selectors</p>
+            <p class="cssselectors notnegation">This is css selectors</p>
+            <p class="cssselectors notnegation">This is css selectors</p>
+        </div>
+        <footer class="notnegation">Fourth article footer</footer>
+    </article>
+    <article>
+        <header>
+            <h2 class="notnegation">Css Selectors</h2>
+            <h2 class="notnegation">p.cssselector ~ p</h2>
+        </header>
+        <div>
+            <p class="cssselector notnegation">This is css selectors</p>
+            <p class="cssselector notnegation">This is css selectors</p>
+            <p class="cssselector notnegation">This is css selectors</p>
+            <span class="notnegation">Css selectors Span</span>
+            <p class="cssselector notnegation">This is css selectors</p>
+            <p class="cssselector notnegation">This is css selectors</p>
+            <p class="cssselector notnegation">This is css selectors</p>
+        </div>
+        <footer class="notnegation">Fifth article footer</footer>
     </article>
 </section>
-<footer>@Sarath 2016</footer>
+<footer class="notnegation">@Sarath 2016</footer>
+
+
+video 9 next
+
 </body>
 </html>
